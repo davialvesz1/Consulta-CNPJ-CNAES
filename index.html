@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <header>
+    <img src="cfsmart.jpg" alt="CF Contabilidade" class="header-img">
+  </header>
+  
+  <meta charset="UTF-8">
+  <title>Consulta de CNPJ</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script defer src="index.js"></script>
+</head>
+<body>
+  <h1>Consulta de CNPJ</h1>
+  
+  <form id="cnpjForm">
+    <label for="cnpj">Digite o CNPJ:</label>
+    <input type="text" id="cnpj" name="cnpj" required placeholder="00.000.000/0000-00">
+    <button type="submit">Consultar</button>
+  </form>
+
+  <div class="resultado">
+    <p id="nome"></p>
+    <p id="situacao"></p>
+    <p id="data_situacao"></p>
+    <p id="uf"></p>
+    <p><strong></strong><span id="municipio"></span></p>
+    <p><strong>CNAE Principal:</strong> <span id="cnaePrincipal"></span></p>
+    <p><strong>CNAEs Secundários:</strong></p>
+    <strong><ul id="cnaesSecundarios"></ul></strong>
+
+    <hr>
+
+    <p id="simplesNacional"></p>
+    <p id="dataOpcao"></p>
+    <p id="dataExclusao"></p>
+    <p id="optanteMei"></p>
+  </div>
+</body>
+</html>

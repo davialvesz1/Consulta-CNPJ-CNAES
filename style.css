@@ -1,0 +1,135 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+header {
+  text-align: center;
+  background-color: #002b5c; /* Azul escuro como fundo */
+  padding: 10px;
+}
+
+.header-img {
+  max-width: 50%;
+  height: auto;
+}
+
+/* Corpo */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f6f8;
+  color: #2c3e50;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 20px;
+}
+
+/* Título */
+h1 {
+  color: #2c3e50;
+  font-size: 28px;
+  margin-bottom: 30px;
+}
+
+/* Formulário */
+form {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.06);
+  width: 100%;
+  max-width: 500px;
+  margin-bottom: 30px;
+  border: 1px solid #dcdde1;
+}
+
+/* Labels e inputs */
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #bdc3c7;
+  border-radius: 6px;
+  font-size: 15px;
+  margin-bottom: 20px;
+  background-color: #f9f9f9;
+}
+
+/* Botão */
+button {
+  width: 100%;
+  padding: 12px;
+  background-color: #1e3799;
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #0c2461;
+}
+
+/* Área de resultados */
+.resultado {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.06);
+  width: 100%;
+  max-width: 600px;
+  border: 1px solid #dcdde1;
+}
+
+.resultado p,
+.resultado ul {
+  margin-bottom: 12px;
+  line-height: 1.6;
+}
+
+ul {
+  padding-left: 20px;
+  list-style: disc;
+}
+
+/* Responsivo */
+@media (max-width: 600px) {
+  form, .resultado {
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  button {
+    font-size: 14px;
+  }
+}
+#downloadExcel {
+  background-color: #003d73; /* azul predominante CF */
+  color: #ffffff;
+  border: none;
+  padding: 12px 24px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#downloadExcel:hover {
+  background-color: #002d54;
+  transform: scale(1.03);
+}
